@@ -9,9 +9,9 @@ function start () {
 
 function bindEventListeners (dots) {
   for (var i = 0; i < dots.length; i++) {
-    // BIND YOUR EVENT LISTENERS HERE
-    // The first one is provided for you
+
     dots[i].addEventListener('contextmenu', makeGreen)
+    dots[i].addEventListener('click', makeBlue)
   }
 }
 
@@ -47,4 +47,5 @@ function displayTotals (totals) {
   for (var key in totals) {
     document.getElementById(key + '-total').innerHTML = totals[key]
   }
+}
 }
